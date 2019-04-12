@@ -1,0 +1,47 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+WRAPPER_ARMHF := {destdir}/{install_dir}/edgetpu/swig/_edgetpu_cpp_wrapper.cpython-*-arm-linux-gnueabihf.so
+WRAPPER_ARM64 := {destdir}/{install_dir}/edgetpu/swig/_edgetpu_cpp_wrapper.cpython-*-aarch64-linux-gnu.so
+WRAPPER_AMD64 := {destdir}/{install_dir}/edgetpu/swig/_edgetpu_cpp_wrapper.cpython-*-x86_64-linux-gnu.so
+
+FILENAME := libedgetpu.so.1.0
+SONAME := libedgetpu.so.1
+LIB_DEV := debian/libedgetpu-dev/usr/lib/$(DEB_HOST_GNU_TYPE)
+LIB_STD := debian/libedgetpu1-std/usr/lib/$(DEB_HOST_GNU_TYPE)
+LIB_MAX := debian/libedgetpu1-max/usr/lib/$(DEB_HOST_GNU_TYPE)
+
+export PYBUILD_NAME=edgetpu
+
+# Remove .so from other platforms.
+ifeq ($(DEB_TARGET_ARCH),armhf)
+  LIBEDGETPU_SUFFIX := arm32
+  export PYBUILD_AFTER_INSTALL=rm -f $(WRAPPER_ARM64) $(WRAPPER_AMD64)
+else ifeq ($(DEB_TARGET_ARCH),arm64)
+  LIBEDGETPU_SUFFIX := arm64
+  export PYBUILD_AFTER_INSTALL=rm -f $(WRAPPER_ARMHF) $(WRAPPER_AMD64)
+else ifeq ($(DEB_TARGET_ARCH),amd64)
+  LIBEDGETPU_SUFFIX := x86_64
+  export PYBUILD_AFTER_INSTALL=rm -f $(WRAPPER_ARMHF) $(WRAPPER_ARM64)
+endif
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_install:
+	dh_auto_install
+	mkdir -p $(LIB_DEV)
+	ln -s $(FILENAME) $(LIB_DEV)/libedgetpu.so
+	mkdir -p $(LIB_STD)
+	cp libedgetpu/libedgetpu_$(LIBEDGETPU_SUFFIX)_throttled.so $(LIB_STD)/$(FILENAME)
+	ln -s $(FILENAME) $(LIB_STD)/$(SONAME)
+	mkdir -p $(LIB_MAX)
+	cp libedgetpu/libedgetpu_$(LIBEDGETPU_SUFFIX).so $(LIB_MAX)/$(FILENAME)
+	ln -s $(FILENAME) $(LIB_MAX)/$(SONAME)
+
+# Skip .so post processing.
+override_dh_strip:
+override_dh_shlibdeps:

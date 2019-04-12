@@ -1,0 +1,44 @@
+Test images are from Open Images Dataset V4.
+
+License: Attribution 2.0 Generic (CC BY 2.0)
+URL: https://creativecommons.org/licenses/by/2.0/
+
+- face.jpg (1028 * 712)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F0dzct&id=959ec6a16e85dc22
+
+- cat.bmp (600 * 400), cat_720p.jpg (1080 * 720), cat_1080p.jpg (1920 * 1080)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F01yrx&id=02b4196ce8a0e541
+  The size of original image is 3008 * 2000, we resized it for performance tests.
+
+- pets.jpg (2360 * 1983)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F0bt9lr&id=82270c27bacdcaa4
+
+- hot_dog.jpg (3264 * 2448)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F01b9xk&id=1170c58625bec5dc
+
+- parrot.jpg (1688 * 3064)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F0gv1x&id=0f3ebab958f44f5f
+
+- owl.jpg (1600 * 1200)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F09d5_&id=165178f034f150ba
+
+- imprinting/cat_test_0.bmp (1000 * 1500)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F01yrx&id=861217441698b254
+
+- imprinting/cat_train_0.bmp (1218 * 1129)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F01yrx&id=a06c29ac93f72e9e
+
+- imprinting/dog_test_0.bmp (1024 * 680)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F0bt9lr&id=81b9f6167f421960
+
+- imprinting/dog_train_0.bmp (1500 * 1000)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F0bt9lr&id=852e7ee93eaded19
+
+- imprinting/hotdog_test_0.bmp (1632 * 1224)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F01b9xk&id=4d7133d6aabede44
+
+- imprinting/hotdog_train_0.bmp (1080 * 1080)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F01b9xk&id=9c60d209eb8efd7a
+
+- imprinting/hotdog_train_1.bmp (1728 * 1152)
+  https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&c=%2Fm%2F01b9xk&id=ca5a2557b3756d28
