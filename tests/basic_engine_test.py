@@ -48,13 +48,13 @@ class TestBasicEnginePythonAPI(unittest.TestCase):
 
     # Check model's output.
     output_tensors_sizes = ssd_engine.get_all_output_tensors_sizes()
-    self.assertListEqual([40, 10, 10, 1], output_tensors_sizes.tolist())
+    self.assertListEqual([80, 20, 20, 1], output_tensors_sizes.tolist())
     self.assertEqual(4, ssd_engine.get_num_of_output_tensors())
-    self.assertEqual(40, ssd_engine.get_output_tensor_size(0))
-    self.assertEqual(10, ssd_engine.get_output_tensor_size(1))
-    self.assertEqual(10, ssd_engine.get_output_tensor_size(2))
+    self.assertEqual(80, ssd_engine.get_output_tensor_size(0))
+    self.assertEqual(20, ssd_engine.get_output_tensor_size(1))
+    self.assertEqual(20, ssd_engine.get_output_tensor_size(2))
     self.assertEqual(1, ssd_engine.get_output_tensor_size(3))
-    self.assertEqual(61, ssd_engine.total_output_array_size())
+    self.assertEqual(121, ssd_engine.total_output_array_size())
 
   def testRunInference(self):
     for model in test_utils.GetModelList():
