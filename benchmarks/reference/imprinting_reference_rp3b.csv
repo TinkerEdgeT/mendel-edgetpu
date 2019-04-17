@@ -1,3 +1,8 @@
 MODEL DATA_SET INFERENCE_TIME
+<<<<<<< HEAD   (76f2fd Update test models to GA version)
 mobilenet_v1_1.0_224_quant_embedding_extractor.tflite open_image_v4_subset 59.63
 mobilenet_v1_1.0_224_quant_embedding_extractor_edgetpu.tflite open_image_v4_subset 2.07
+=======
+mobilenet_v1_1.0_224_quant_embedding_extractor.tflite open_image_v4_subset 60.754885107977316
+mobilenet_v1_1.0_224_quant_embedding_extractor_edgetpu.tflite open_image_v4_subset 1.8090169329661876
+>>>>>>> CHANGE (5bcc4b Update mobilenet_v1 embedding extractor to GA version and mi)
