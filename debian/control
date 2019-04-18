@@ -1,4 +1,4 @@
-Source: edgetpu-api
+Source: edgetpu
 Maintainer: Coral <coral-support@google.com>
 Section: python
 Priority: optional

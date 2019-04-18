@@ -1,10 +1,10 @@
-edgetpu-api (10-2) mendel-chef; urgency=medium
+edgetpu (10-2) mendel-chef; urgency=medium
 
   * Bump version for point release
 
  -- Coral <coral-support@google.com>  Thu, 18 Apr 2019 13:37:19 -0700
 
-edgetpu-api (9-2) mendel-chef; urgency=medium
+edgetpu (9-2) mendel-chef; urgency=medium
 
   * Add flag '--enable_assertion' to enable assertion in benchmark tests
   * Properly test installed edgetpu library (-i option)
@@ -15,7 +15,7 @@ edgetpu-api (9-2) mendel-chef; urgency=medium
 
  -- Coral <coral-support@google.com>  Wed, 03 Apr 2019 14:11:47 -0800
 
-edgetpu-api (8-2) mendel-chef; urgency=medium
+edgetpu (8-2) mendel-chef; urgency=medium
 
   * Update libraries
   * Update install.sh to install to /usr/lib instead of /lib
@@ -23,7 +23,7 @@ edgetpu-api (8-2) mendel-chef; urgency=medium
 
  -- Coral <coral-support@google.com>  Tue, 02 Apr 2019 14:11:47 -0800
 
-edgetpu-api (7-2) mendel-chef; urgency=medium
+edgetpu (7-2) mendel-chef; urgency=medium
 
   * Update libedgetpu with soname.
   * Store exception related tests into exception_test.py and disable it on
@@ -40,7 +40,7 @@ edgetpu-api (7-2) mendel-chef; urgency=medium
 
  -- Coral <coral-support@google.com>  Thu, 28 Mar 2019 14:11:47 -0800
 
-edgetpu-api (6-2) mendel-chef; urgency=medium
+edgetpu (6-2) mendel-chef; urgency=medium
 
   * Add script to analyze Multiple Edge TPU performance on Python side.
   * Add missing python3-tk package.
@@ -62,13 +62,13 @@ edgetpu-api (6-2) mendel-chef; urgency=medium
 
  -- Coral <coral-support@google.com>  Tue, 19 Mar 2019 17:08:25 -0700
 
-edgetpu-api (5-2) mendel-beaker; urgency=medium
+edgetpu (5-2) mendel-beaker; urgency=medium
 
   * Update libedgetpu binaries
 
  -- Coral <coral-support@google.com>  Fri, 08 Mar 2019 14:11:47 -0800
 
-edgetpu-api (4-2) mendel-beaker; urgency=medium
+edgetpu (4-2) mendel-beaker; urgency=medium
 
   * Use different working directory for unittests.
   * Update bazel invocation and io_bazel_rules_closure
@@ -87,31 +87,31 @@ edgetpu-api (4-2) mendel-beaker; urgency=medium
 
  -- Coral <coral-support@google.com>  Wed, 27 Feb 2019 11:00:25 -0800
 
-edgetpu-api (3-2) mendel-beaker; urgency=medium
+edgetpu (3-2) mendel-beaker; urgency=medium
 
   * Add LICENSE to package.
 
  -- Coral <coral-support@google.com>  Mon, 04 Feb 2019 11:20:13 -0800
 
-edgetpu-api (3-1) mendel-beaker; urgency=medium
+edgetpu (3-1) mendel-beaker; urgency=medium
 
   * Replace SeeFood with iNat bird model
 
  -- Coral <coral-support@google.com>  Mon, 28 Jan 2019 14:10:00 -0800
 
-edgetpu-api (2-1) mendel-beaker; urgency=medium
+edgetpu (2-1) mendel-beaker; urgency=medium
 
   * Update libedgetpu binaries
 
  -- Coral <coral-support@google.com>  Tue, 22 Jan 2019 10:42:07 -0800
 
-edgetpu-api (1-1) mendel-beaker; urgency=medium
+edgetpu (1-1) mendel-beaker; urgency=medium
 
   * Cut for beaker release and normalization of version.
 
  -- Coral <coral-support@google.com>  Wed, 16 Jan 2019 12:00:00 -0800
 
-edgetpu-api (0.1) UNRELEASED; urgency=medium
+edgetpu (0.1) UNRELEASED; urgency=medium
 
   * Initial release.
 
