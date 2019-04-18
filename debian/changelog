@@ -1,3 +1,9 @@
+edgetpu-api (10-2) mendel-chef; urgency=medium
+
+  * Bump version for point release
+
+ -- Coral <coral-support@google.com>  Thu, 18 Apr 2019 13:37:19 -0700
+
 edgetpu-api (9-2) mendel-chef; urgency=medium
 
   * Add flag '--enable_assertion' to enable assertion in benchmark tests
